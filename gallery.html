@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.png">
+    <title>Gallery | Positivitype</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="js/three.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+  </head>
+
+
+  <body>
+<a-scene>
+<!-- Navigation -->
+
+<a-box position="1.764 2.6 -5.949" rotation="0 45 0" material="color: red; opacity: .7" scale=".54 .54 .54"
+change-color-on-hover="color: #0425b5" navigate-on-click="url: index.html" animation="property: position; from:1.764 2.6 -5.949; to:1.764 2.8 -5.949; loop: true; dur: 3000; dir: alternate"></a-box>
+
+<a-text value="Home" color="white" scale=".60 .60 .60" position="1.34 2.55 -5.542" rotation="0 -45 0" animation="property: position; from:1.34 2.55 -5.6; to:1.34 2.7 -5.6; loop: true; dur: 3000; dir: alternate"></a-text>
+
+<a-box position="1.764 1.93 -5.949" rotation="0 45 0" material="color: red; opacity: .7" scale=".54 .54 .54"
+change-color-on-hover="color: #0425b5" navigate-on-click="url: about.html" animation="property: position; from:1.764 1.93 -5.949; to:1.764 2.1 -5.949; loop: true; dur: 3000; dir: alternate"></a-box>
+
+<a-text value="About" color="white" scale=".60 .60 .60" position="1.32  1.9 -5.542" rotation="0 -45 0" animation="property: position; from:1.32  1.9 -5.542; to:1.35 2.1 -5.6; loop: true; dur: 3000; dir: alternate"></a-text>
+
+<a-box position="1.764 1.3 -5.949" rotation="0 45 0" material="color: red; opacity: .7" scale=".54 .54 .54"
+change-color-on-hover="color: #0425b5" navigate-on-click="url: contact.html" animation="property: position; from:1.764 1.3 -5.949; to:1.764 1.45 -5.949; loop: true; dur: 3000; dir: alternate"></a-box>
+
+<a-text value="Contact" color="white" scale=".60 .60 .60" position="1.29 1.3 -5.542" rotation="0 -45 0" animation="property: position; from:1.29 1.3 -5.542; to:1.29 1.5 -5.6; loop: true; dur: 3000; dir: alternate"></a-text>
+
+
+<a-assets>
+      <a-asset-item id="type-obj0" src="assets/models/type/letter0.obj"></a-asset-item>
+      <a-asset-item id="type-mtl0" src="assets/models/type/letter0.mtl"></a-asset-item>
+      <a-asset-item id="type-obj1" src="assets/models/type/letter1.obj"></a-asset-item>
+      <a-asset-item id="type-mtl1" src="assets/models/type/letter1.mtl"></a-asset-item>
+      <a-asset-item id="letter-obj" src="assets/models/type/letter.obj"></a-asset-item>
+      <a-asset-item id="letter-mtl" src="assets/models/type/letter.mtl"></a-asset-item>
+      <a-asset-item id="kiss-obj" src="assets/models/type/kiss.obj"></a-asset-item>
+      <a-asset-item id="kiss-mtl" src="assets/models/type/kiss.mtl"></a-asset-item>
+      <a-asset-item id="F-obj" src="assets/models/type/F.obj"></a-asset-item>
+      <a-asset-item id="F-mtl" src="assets/models/type/F.mtl"></a-asset-item>
+      <a-asset-item id="L-obj" src="assets/models/type/L.obj"></a-asset-item>
+      <a-asset-item id="L-mtl" src="assets/models/type/L.mtl"></a-asset-item>
+</a-assets>
+
+        <a-entity obj-model="obj: #type-obj0; mtl: #type-mtl0" position="4.5 4 5.9" scale=".50 .50 .50" rotation="0 90 0"></a-entity>
+
+        <a-entity obj-model="obj: #type-obj1; mtl: #type-mtl1" position="4.399 2.980 5.963" scale=".25 .25 .25" rotation="0 0 0"></a-entity>
+    
+        <a-entity obj-model="obj: #letter-obj; mtl: #letter-mtl" position="0 3.5 -7.416" scale=".012 .012 .012"
+          rotation="0 0 0"></a-entity>
+    
+        <a-entity obj-model="obj: #kiss-obj; mtl: #kiss-mtl" position="0 1.50 13.5" scale=".15 .15 .15"
+          rotation="0 180 0" animation="property: position; from:0 1.50 13.5; to:0 2 13.5; loop: true; dur: 5000; dir: alternate"></a-entity>
+    
+        <a-entity obj-model="obj: #F-obj; mtl: #F-mtl" position="-12.35 1 3.33" scale=".1 .1 .1"
+          rotation="0 90 0" animation="property: position; from:-12.35 1 3.33; to:-12.35 2 3.33; loop: true; dur: 5000; dir: alternate"></a-entity>
+    
+        <a-entity obj-model="obj: #L-obj; mtl: #L-mtl" position="12.5 2 2.4" scale=".3 .3 .3"
+          rotation="0 -90 0" animation="property: position; from:12.5 1 2.4; to:12.5 2 2.4; loop: true; dur: 5000; dir: alternate"></a-entity>
+
+<!-- Audio -->
+<a-sound src="assets/song/happy-song.mp3" autoplay="loop"></a-sound>
+
+<!-- Lights -->
+<a-entity light="type: ambient; color: #444" position="" rotation="" scale="" visible=""></a-entity> 
+<a-entity light="type: directional; color: #EEE" position="0 1 1" rotation="" scale="" visible="">
+</a-entity>
+<a-entity light="type: spot; intensity: 0.3; distance: 50; decay: 2" position="0 12 4.1" rotation="-31 -180 90"></a-entity>
+
+
+<!-- Skyphere -->
+<a-entity geometry="primitive: sphere; radius: 80" material="color: #112; shader: flat" scale="1 1 -1" position="" rotation="" visible="">
+</a-entity>
+
+<!-- Floor -->
+<a-entity geometry="primitive: cylinder; height: .2; radius: 12;" material="color: #BABABA; src: #floor;
+metalness: .2; repeat: 50 20; roughness: .1" position="0 0 0" rotation="" scale="" visible=""></a-entity>
+
+<!-- Text -->
+<a-text value="A friendly typeface" color="white" scale="1.2 1.2 1.2" position="-1.2 3.5 -7.4"></a-text>
+<a-text value="Sans-serif font suitable for 
+headlines, posters and titles." color="white" scale=".8 .8 .8" position="-1.2 2.5 -7.4"></a-text>
+
+<!-- Walls & Floor -->
+<a-curvedimage color="black" scale=".6 1.5 -.8" position="-0.1 5 -8.3" rotation="0 90 0" height="9" width="180" radius="5.70" segmentsHeight="18"></a-curvedimage>
+<a-plane color="#BABABA" scale="30 30 8" position="0 0 0" rotation="-90 90 90"></a-plane>
+<a-plane scale="10 10 0"  position="-5 5 9.9" rotation="0 90 0" src="assets/img/white_background.jpg"></a-plane>
+<a-plane color="yellow" scale="10 10 0"  position="5 5 9.9" rotation="0 -90 0" src="assets/img/white_background.jpg"></a-plane>
+<a-plane color="yellow" scale="10 10 0"  position="-10.2 10 1.7" rotation="90 90 90" src="assets/img/white_background.jpg"></a-plane>
+<a-plane scale="10 10 0"  position="-10.30 5.1 -1.3" rotation="0 0 0" src="assets/img/white_background.jpg"></a-plane>
+<a-plane color="yellow" scale="10 10 0"  position="10 4.9 4.9" rotation="0 -180 0" src="assets/img/white_background.jpg"></a-plane>
+<a-plane color="yellow" scale="10 26.8 0"  position="-0.162 9.6 1.4" rotation="90 90 90" src="assets/img/web_background1.jpg"></a-plane>
+<a-plane scale="10 10 0"  position="-5.3 5 -6.3" rotation="0 90 0" src="assets/img/white_background.jpg"></a-plane>
+<a-plane color="yellow" scale="10 10 0"  position="4.9 5 -6.3" rotation="0 -90 0" src="assets/img/white_background.jpg"></a-plane>
+<a-plane color="yellow" scale="10 10 0"  position="9.549 10 2.7" rotation="90 90 90" src="assets/img/white_background.jpg"></a-plane>
+<a-plane color="yellow" scale="10 10 0"  position="9.9 5 -1.3" rotation="0 0 0" src="assets/img/white_background.jpg"></a-plane>
+<a-plane scale="10 10 0"  position="-9.991 4.9 4.893" rotation="0 -180 0" src="assets/img/white_background.jpg"></a-plane>
+<a-plane scale="5 5 5"  position="-4.882 4.9 -4.769" rotation="0 90 0" src="assets/img/uppercase.jpg"></a-plane>
+<a-plane scale="5 5 5"  position="4.796 4.9 -4.769" rotation="0 -90 0" src="assets/img/lowercase.jpg"></a-plane>
+<a-plane scale="6.382 5 5"  position="4.796 4.9 10.146" rotation="0 -90 0" src="assets/img/numerals.jpg"></a-plane>
+<a-plane scale="6.382 5 5"  position="-4.888 4.9 9.921" rotation="0 90 0" src="assets/img/laughter.jpg"></a-plane>
+<a-plane scale="5 6 5"  position="8.767 4.9 -1" rotation="0 0 0" src="assets/img/joy.jpg"></a-plane>
+<a-plane scale="5 6 5"  position="8.767 4.9 4.8" rotation="0 180 0" src="assets/img/ligatures.jpg"></a-plane>
+<a-plane scale="5 6 5"  position="-8.735 5 4.645" rotation="0 180 0" src="assets/img/proportions.jpg"></a-plane>
+<a-plane scale="5 6 5"  position="-8.735 5 -1.0" rotation="0 0 0" src="assets/img/poster.jpg"></a-plane>
+
+<!-- Carpet -->
+<a-entity geometry="primitive: box; depth: 20; height: 0.025; width: 2" material="color: #750000; metalness: 0; src: #carpet;
+repeat: 3 40; roughness: 1" position="0 .2 0" rotation="" scale="" visible=""></a-entity>
+
+
+<!-- Camera  -->
+<a-entity camera=""
+position="0 1.6 0"
+look-controls cursor="rayOrigin: mouse">
+<a-entity cursor
+position="0 0 -1"
+geometry="primitive: sphere; radius: 0.01;"
+material="color: yellow; shader: flat;">
+</a-entity>
+</a-entity>
+
+</a-scene>
+
+
+<script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>

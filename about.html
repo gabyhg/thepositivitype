@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/favicon.png">
+  <title>About | Positivitype</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="js/three.js"></script>
+  <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+</head>
+
+
+<body>
+
+<a-scene>
+<!-- Navigation -->
+
+<a-box position="2.1 2.6 -5.949" rotation="0 45 0" material="color: yellow; opacity: .7" scale=".54 .54 .54"
+change-color-on-hover="color: #0425b5" navigate-on-click="url: index.html" animation="property: position; from:2.1 2.6 -5.949; to:2.1 2.8 -5.949; loop: true; dur: 3000; dir: alternate"></a-box>
+
+<a-text value="Home" color="white" scale=".60 .60 .60" position="1.68 2.56 -5.6" rotation="0 -45 0" animation="property: position; from:1.68 2.56 -5.6; to:1.68 2.8 -5.6; loop: true; dur: 3000; dir: alternate"></a-text>
+
+<a-box position="2.1 1.93 -5.949" rotation="0 45 0" material="color: yellow; opacity: .7" scale=".54 .54 .54"
+change-color-on-hover="color: #0425b5" navigate-on-click="url: gallery.html" animation="property: position; from:2.1 1.93 -5.949; to:2.1 2.1 -5.949; loop: true; dur: 3000; dir: alternate"></a-box>
+
+<a-text value="Gallery" color="white" scale=".60 .60 .60" position="1.66  1.9 -5.6" rotation="0 -45 0" animation="property: position; from:1.66  1.9 -5.6; to:1.66 2.1 -5.6; loop: true; dur: 3000; dir: alternate"></a-text>
+
+<a-box position="2.1 1.3 -5.949" rotation="0 45 0" material="color: yellow; opacity: .7" scale=".54 .54 .54"
+change-color-on-hover="color: #0425b5" navigate-on-click="url: contact.html" animation="property: position; from:2.1 1.3 -5.949; to:2.1 1.45 -5.949; loop: true; dur: 3000; dir: alternate"></a-box>
+
+<a-text value="Contact" color="white" scale=".60 .60 .60" position="1.63 1.3 -5.6" rotation="0 -45 0" animation="property: position; from:1.63 1.3 -5.6; to:1.63 1.5 -5.6; loop: true; dur: 3000; dir: alternate"></a-text>
+
+ 
+<!-- Audio -->
+    <a-sound src="assets/song/happy-song.mp3" autoplay="loop"></a-sound>
+ 
+
+<!-- Letters & Signs -->
+    
+    <a-assets>
+      <a-asset-item id="type-obj25" src="assets/models/type/sign25.obj"></a-asset-item>
+      <a-asset-item id="type-mtl25" src="assets/models/type/sign25.mtl"></a-asset-item>
+      <a-asset-item id="type-obj26" src="assets/models/type/sign26.obj"></a-asset-item>
+      <a-asset-item id="type-mtl26" src="assets/models/type/sign26.mtl"></a-asset-item>
+      <a-asset-item id="type-obj27" src="assets/models/type/sign27.obj"></a-asset-item>
+      <a-asset-item id="type-mtl27" src="assets/models/type/sign27.mtl"></a-asset-item>
+      <a-asset-item id="type-obj28" src="assets/models/type/sign28.obj"></a-asset-item>
+      <a-asset-item id="type-mtl28" src="assets/models/type/sign28.mtl"></a-asset-item>
+      <a-asset-item id="type-obj29" src="assets/models/type/sign29.obj"></a-asset-item>
+      <a-asset-item id="type-mtl29" src="assets/models/type/sign29.mtl"></a-asset-item>
+      <a-asset-item id="type-obj30" src="assets/models/type/sign30.obj"></a-asset-item>
+      <a-asset-item id="type-mtl30" src="assets/models/type/sign30.mtl"></a-asset-item>
+    </a-assets>
+
+
+    <a-entity obj-model="obj: #type-obj25; mtl: #type-mtl25" position="-4.20 -3 -15" scale=".50 .50 .50" rotation="0 180 25"
+    animation="property: rotation; from:0 180 25; to:0 600 25; loop: true; dur: 20000; dir: alternate"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj26; mtl: #type-mtl26" position="-4.5 0.3 -4.3" scale=".30 .30 .30" rotation="0 180 25"
+    animation="property: rotation; from:0 180 25; to:0 600 25; loop: true; dur: 20000; dir: alternate"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj27; mtl: #type-mtl27" position="-0 -0.5 -5" scale=".30 .30 .30" rotation="0 -30 45"
+    animation="property: rotation; from:0 -30 45; to:0 -600 45; loop: true; dur: 20000; dir: alternate"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj28; mtl: #type-mtl28" position="4.612 -2 -8.65" scale=".25 .25 .25" rotation="0 -50 45"
+    animation="property: rotation; from:0 -50 45; to:0 -600 600; loop: true; dur: 20000; dir: alternate"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj29; mtl: #type-mtl29" position="2 5 -5.109" scale=".20 .20 .20" rotation="0 -50 45"
+    animation="property: rotation; from:0 -50 45; to:-45 600 -45; loop: true; dur: 20000; dir: alternate"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj30; mtl: #type-mtl30" position="-4.770 2.1 -7.8" scale=".30 .30 .30" rotation="0 -50 45"
+    animation="property: rotation; from:0 -50 45; to:0 45 600; loop: true; dur: 20000; dir: alternate"></a-entity>
+
+
+
+<!-- Hello! -->
+  <a-asset-item id="type-obj7" src="assets/models/type/letter7.obj"></a-asset-item>
+  <a-asset-item id="type-mtl7" src="assets/models/type/letter7.mtl"></a-asset-item>
+
+  <a-asset-item id="type-obj2" src="assets/models/type/letter2.obj"></a-asset-item>
+  <a-asset-item id="type-mtl2" src="assets/models/type/letter2.mtl"></a-asset-item>
+
+  <a-asset-item id="type-obj5" src="assets/models/type/letter5.obj"></a-asset-item>
+  <a-asset-item id="type-mtl5" src="assets/models/type/letter5.mtl"></a-asset-item>
+
+  <a-asset-item id="type-obj5" src="assets/models/type/letter5.obj"></a-asset-item>
+  <a-asset-item id="type-mtl5" src="assets/models/type/letter5.mtl"></a-asset-item>
+
+  <a-asset-item id="type-obj6" src="assets/models/type/letter6.obj"></a-asset-item>
+  <a-asset-item id="type-mtl6" src="assets/models/type/letter6.mtl"></a-asset-item>
+
+
+  <a-entity obj-model="obj: #type-obj7; mtl: #type-mtl7" position="-2.607 5 -6.101" scale="0.15 0.15 0.15" rotation="-2 90 3.798"
+  animation="property: position; from:-2.607 5 -6.101; to:-2.607 5.5 -6.101; loop: true; dur: 1000; dir: alternate"></a-entity>
+
+  <a-entity obj-model="obj: #type-obj2; mtl: #type-mtl2" position="-1.986 5 -6.149" scale=".3 .3 .23"
+  rotation="-2 90 17" animation="property: position; from:-1.986 5 -6.149; to:-1.986 5.5 -6.149; loop: true; dur: 1000; dir: alternate" ></a-entity>
+
+  <a-entity obj-model="obj: #type-obj5; mtl: #type-mtl5" position="-1.771 4.91 -6.219" scale=".0.15 0.15 0.15" rotation="-1.169 -90.44 -7.431"
+  animation="property: position; from:-1.771 4.91 -6.219; to:-1.771 5.5 -6.219; loop: true; dur: 1000; dir: alternate"></a-entity>
+
+  <a-entity obj-model="obj: #type-obj5; mtl: #type-mtl5" position="-1.481 5.2 -6.131" scale=".1 .1 .1" rotation="-4.428 -104.8 -3.453"
+  animation="property: position; from:-1.481 5.2 -6.131; to:-1.481 5.5 -6.131; loop: true; dur: 1000; dir: alternate"></a-entity>
+
+  <a-entity obj-model="obj: #type-obj6; mtl: #type-mtl6" position="-1.062 5 -6.1" scale=".1 .1 .1" rotation="3.398 94.790 -2.745"
+  animation="property: position; from:-1.062 5 -6.1; to:-1.062 5.5 -6.1; loop: true; dur: 1000; dir: alternate"></a-entity>
+
+
+<!-- Text -->
+  <a-text value="This project was created for my Type Design class using knowledge acquired in my Virtual Reality class at the Academy of Art University."color="white" scale=".9 .9 .9" position="-2.7 4.5 -6"></a-text> 
+  <a-text value="I love designing typefaces, lettering and creating mixed media concepts which have all been combined to build this project."color="white" scale=".9 .9 .9" position="-2.7 3.7 -6"></a-text> 
+  <a-text value="The Positivitype is a virtual gallery where I feature my type and lettering work in a virtual reality environment. The goal is for users to have fun
+   in a fully interactive and immersive experience." color="white" scale=".9 .9 .9" position="-2.7 2.7 -6"></a-text>
+
+<!-- Walls & Floor -->
+  <a-plane color="#750000" scale="20 20 0" position="0 5 -16" src="assets/img/I_love_you.jpg"></a-plane>
+  <a-plane scale="20 20 0"  position="-10 5 -6" rotation="0 90 0" src="assets/img/love2.jpg"></a-plane>
+  <a-plane color="yellow" scale="20 20 0"  position="10 5 -6" rotation="0 -90 0" src="assets/img/welcome.jpg"></a-plane>
+  <a-plane color="blue" scale="20 20 0"  position="0 15 -6" rotation="90 0 0" src="assets/img/peace.jpg"></a-plane>
+  <a-plane scale="20 20 0"  position="0 -5 -6" rotation="-90 0 0" src="assets/img/web_background1.jpg"></a-plane>
+  <a-plane color="blue" scale="20 20 0"  position="-0.014 4.951 3.945" rotation="0 -180 0" src="assets/img/art.jpg"></a-plane>
+  <a-plane color="#750000" scale="8 7.5 10" position="-0.5 4.120 -8.7"></a-plane>
+
+
+<!-- Background -->
+  <a-sky color="black" position="-0.037 4.567 -0.230"></a-sky>
+   
+<!-- Camera -->
+    <a-entity camera=""
+        position="0 1.6 0"
+        look-controls cursor="rayOrigin: mouse">
+    <a-entity cursor
+        position="0 0 -1"
+        geometry="primitive: sphere; radius: 0.01;"
+        material="color: yellow; shader: flat;">
+    </a-entity>
+    </a-entity>
+
+  </a-scene>
+  
+  <script src="assets/js/main.js"></script>
+</body>
+
+
+</html>

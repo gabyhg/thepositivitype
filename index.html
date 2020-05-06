@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="img/favicon.png">
+  <title>Home | Positivitype</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="js/three.js"></script>
+  <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+</head>
+
+
+<body>
+
+<a-scene>
+<!-- Navigation -->
+
+<a-box position="1.764 2.6 -5.949" rotation="0 45 0" material="color: #001261; opacity: .7" scale=".54 .54 .54"
+change-color-on-hover="color: #0425b5" navigate-on-click="url: about.html" animation="property: position; from:1.764 2.6 -5.949; to:1.764 2.8 -5.949; loop: true; dur: 3000; dir: alternate"></a-box>
+
+<a-text value="About" color="white" scale=".60 .60 .60" position="1.34 2.55 -5.542" rotation="0 -45 0" animation="property: position; from:1.34 2.55 -5.6; to:1.34 2.7 -5.6; loop: true; dur: 3000; dir: alternate"></a-text>
+
+<a-box position="1.764 1.93 -5.949" rotation="0 45 0" material="color: #001261; opacity: .7" scale=".54 .54 .54"
+change-color-on-hover="color: #0425b5" navigate-on-click="url: gallery.html" animation="property: position; from:1.764 1.93 -5.949; to:1.764 2.1 -5.949; loop: true; dur: 3000; dir: alternate"></a-box>
+
+<a-text value="Gallery" color="white" scale=".60 .60 .60" position="1.32  1.9 -5.542" rotation="0 -45 0" animation="property: position; from:1.32  1.9 -5.542; to:1.35 2.1 -5.6; loop: true; dur: 3000; dir: alternate"></a-text>
+
+<a-box position="1.764 1.3 -5.949" rotation="0 45 0" material="color: #001261; opacity: .7" scale=".54 .54 .54"
+change-color-on-hover="color: #0425b5" navigate-on-click="url: contact.html" animation="property: position; from:1.764 1.3 -5.949; to:1.764 1.45 -5.949; loop: true; dur: 3000; dir: alternate"></a-box>
+
+<a-text value="Contact" color="white" scale=".60 .60 .60" position="1.29 1.3 -5.542" rotation="0 -45 0" animation="property: position; from:1.29 1.3 -5.542; to:1.29 1.5 -5.6; loop: true; dur: 3000; dir: alternate"></a-text>
+
+ 
+<!-- Audio -->
+    <a-sound src="assets/song/happy-song.mp3" autoplay="loop"></a-sound>
+ 
+
+<!-- Letters & Signs -->
+    <a-sphere position="7.801 8.686 -9.855" color="yellow" scale=".25 .25 .25"></a-sphere>
+    
+    <a-assets>
+      <a-asset-item id="type-obj0" src="assets/models/type/letter0.obj"></a-asset-item>
+      <a-asset-item id="type-mtl0" src="assets/models/type/letter0.mtl"></a-asset-item>
+      <a-asset-item id="type-obj1" src="assets/models/type/letter1.obj"></a-asset-item>
+      <a-asset-item id="type-mtl1" src="assets/models/type/letter1.mtl"></a-asset-item>
+      <a-asset-item id="type-obj2" src="assets/models/type/letter2.obj"></a-asset-item>
+      <a-asset-item id="type-mtl2" src="assets/models/type/letter2.mtl"></a-asset-item>
+      <a-asset-item id="type-obj3" src="assets/models/type/letter3.obj"></a-asset-item>
+      <a-asset-item id="type-mtl3" src="assets/models/type/letter3.mtl"></a-asset-item>
+      <a-asset-item id="type-obj4" src="assets/models/type/letter4.obj"></a-asset-item>
+      <a-asset-item id="type-mtl4" src="assets/models/type/letter4.mtl"></a-asset-item>
+      <a-asset-item id="type-obj5" src="assets/models/type/letter5.obj"></a-asset-item>
+      <a-asset-item id="type-mtl5" src="assets/models/type/letter5.mtl"></a-asset-item>
+      <a-asset-item id="type-obj6" src="assets/models/type/letter6.obj"></a-asset-item>
+      <a-asset-item id="type-mtl6" src="assets/models/type/letter6.mtl"></a-asset-item>
+      <a-asset-item id="type-obj7" src="assets/models/type/letter7.obj"></a-asset-item>
+      <a-asset-item id="type-mtl7" src="assets/models/type/letter7.mtl"></a-asset-item>
+      <a-asset-item id="type-obj8" src="assets/models/type/letter8.obj"></a-asset-item>
+      <a-asset-item id="type-mtl8" src="assets/models/type/letter8.mtl"></a-asset-item>
+      <a-asset-item id="type-obj9" src="assets/models/type/letter9.obj"></a-asset-item>
+      <a-asset-item id="type-mtl9" src="assets/models/type/letter9.mtl"></a-asset-item>
+      <a-asset-item id="type-obj10" src="assets/models/type/letter10.obj"></a-asset-item>
+      <a-asset-item id="type-mtl10" src="assets/models/type/letter10.mtl"></a-asset-item>
+      <a-asset-item id="type-obj11" src="assets/models/type/letter11.obj"></a-asset-item>
+      <a-asset-item id="type-mtl11" src="assets/models/type/letter11.mtl"></a-asset-item>
+      <a-asset-item id="type-obj12" src="assets/models/type/letter12.obj"></a-asset-item>
+      <a-asset-item id="type-mtl12" src="assets/models/type/letter12.mtl"></a-asset-item>
+      <a-asset-item id="type-obj13" src="assets/models/type/letter13.obj"></a-asset-item>
+      <a-asset-item id="type-mtl13" src="assets/models/type/letter13.mtl"></a-asset-item>
+      <a-asset-item id="type-obj14" src="assets/models/type/letter14.obj"></a-asset-item>
+      <a-asset-item id="type-mtl14" src="assets/models/type/letter14.mtl"></a-asset-item>
+      <a-asset-item id="type-obj15" src="assets/models/type/letter15.obj"></a-asset-item>
+      <a-asset-item id="type-mtl15" src="assets/models/type/letter15.mtl"></a-asset-item>
+      <a-asset-item id="type-obj16" src="assets/models/type/letter16.obj"></a-asset-item>
+      <a-asset-item id="type-mtl16" src="assets/models/type/letter16.mtl"></a-asset-item>
+      <a-asset-item id="type-obj17" src="assets/models/type/letter17.obj"></a-asset-item>
+      <a-asset-item id="type-mtl17" src="assets/models/type/letter17.mtl"></a-asset-item>
+      <a-asset-item id="type-obj18" src="assets/models/type/letter18.obj"></a-asset-item>
+      <a-asset-item id="type-mtl18" src="assets/models/type/letter18.mtl"></a-asset-item>
+      <a-asset-item id="type-obj19" src="assets/models/type/letter19.obj"></a-asset-item>
+      <a-asset-item id="type-mtl19" src="assets/models/type/letter19.mtl"></a-asset-item>
+      <a-asset-item id="type-obj20" src="assets/models/type/letter20.obj"></a-asset-item>
+      <a-asset-item id="type-mtl20" src="assets/models/type/letter20.mtl"></a-asset-item>
+      <a-asset-item id="type-obj21" src="assets/models/type/letter21.obj"></a-asset-item>
+      <a-asset-item id="type-mtl21" src="assets/models/type/letter21.mtl"></a-asset-item>
+      <a-asset-item id="type-obj22" src="assets/models/type/letter22.obj"></a-asset-item>
+      <a-asset-item id="type-mtl22" src="assets/models/type/letter22.mtl"></a-asset-item>
+      <a-asset-item id="type-obj23" src="assets/models/type/letter23.obj"></a-asset-item>
+      <a-asset-item id="type-mtl23" src="assets/models/type/letter23.mtl"></a-asset-item>
+      <a-asset-item id="type-obj24" src="assets/models/type/letter24.obj"></a-asset-item>
+      <a-asset-item id="type-mtl24" src="assets/models/type/letter24.mtl"></a-asset-item>
+      <a-asset-item id="type-obj25" src="assets/models/type/sign25.obj"></a-asset-item>
+      <a-asset-item id="type-mtl25" src="assets/models/type/sign25.mtl"></a-asset-item>
+      <a-asset-item id="type-obj26" src="assets/models/type/sign26.obj"></a-asset-item>
+      <a-asset-item id="type-mtl26" src="assets/models/type/sign26.mtl"></a-asset-item>
+      <a-asset-item id="type-obj27" src="assets/models/type/sign27.obj"></a-asset-item>
+      <a-asset-item id="type-mtl27" src="assets/models/type/sign27.mtl"></a-asset-item>
+      <a-asset-item id="type-obj28" src="assets/models/type/sign28.obj"></a-asset-item>
+      <a-asset-item id="type-mtl28" src="assets/models/type/sign28.mtl"></a-asset-item>
+      <a-asset-item id="type-obj29" src="assets/models/type/sign29.obj"></a-asset-item>
+      <a-asset-item id="type-mtl29" src="assets/models/type/sign29.mtl"></a-asset-item>
+      <a-asset-item id="type-obj30" src="assets/models/type/sign30.obj"></a-asset-item>
+      <a-asset-item id="type-mtl30" src="assets/models/type/sign30.mtl"></a-asset-item>
+      <a-asset-item id="type-obj31" src="assets/models/type/sign31.obj"></a-asset-item>
+      <a-asset-item id="type-mtl31" src="assets/models/type/sign31.mtl"></a-asset-item>
+    </a-assets>
+
+    <a-entity obj-model="obj: #type-obj0; mtl: #type-mtl0" position="-6.16 0.873 -5" scale=".50 .50 .50" rotation="45 -110 0"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj1; mtl: #type-mtl1" position="-2 1.5 -5" scale=".25 .25 .25" rotation="95 -50 0"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj2; mtl: #type-mtl2" position="-3 -2.567 -10.230" scale=".80 .80 .80"
+      rotation="120 90 25"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj3; mtl: #type-mtl3" position="14 -4 -18" scale=".30 1.15 .80"
+      rotation="-45 78.34 35"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj4; mtl: #type-mtl4" position="8 4.162 -10" scale=".25 .65 .45"
+      rotation="17 -109 13"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj5; mtl: #type-mtl5" position="-6 10.752 -15.661" scale="1.25 1.25 1.25"
+      rotation="63 -106 -35"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj6; mtl: #type-mtl6" position="-1.20 10.45 -11.87" scale=".75 .75 .75"
+      rotation="-180 90 13"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj7; mtl: #type-mtl7" position="-5 4 -9" scale=".35 .35 .35" rotation="-180 90 13">
+    </a-entity>
+
+    <a-entity obj-model="obj: #type-obj8; mtl: #type-mtl8" position="-10 2 -10" scale="1.25 1.25 1.25"
+      rotation="-80 30 25"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj9; mtl: #type-mtl9" position="2 -5 -20" scale=".65 .65 .65" rotation="-80 55 10">
+    </a-entity>
+
+    <a-entity obj-model="obj: #type-obj10; mtl: #type-mtl10" position="7 -5 -8" scale=".80 .80 .80" 
+    rotation="-10 -102 -23"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj11; mtl: #type-mtl11" position="-7 -0.795 -14.819" scale=".85 .85 .85"
+      rotation="-80 -45 -167.00"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj12; mtl: #type-mtl12" position="3.805 -1.552 -8.947" scale=".25 .25 .25"
+      rotation="-100 90 13"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj13; mtl: #type-mtl13" position="11.1 1.628 -7.417" scale="1 1 1"
+      rotation="-80 -119.66 -167.00"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj14; mtl: #type-mtl14" position="-1.033 -2.3 -3.628" scale=".70 .70 .70"
+      rotation="-45 -88 10"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj15; mtl: #type-mtl15" position="-13 7 -13" scale=".80 .80 .80"
+      rotation="-35 -90 90"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj16; mtl: #type-mtl16" position="7.5 4 -6" scale=".20 .20 .20"
+      rotation="-180 90 13"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj17; mtl: #type-mtl17" position="-5.7 6.798 -15.4" scale=".20 .20 .20"
+      rotation="5 -200 -180"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj18; mtl: #type-mtl18" position="-6.734 4.660 -6.058" scale=".25 .25 .25"
+      rotation="-150 90 13"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj19; mtl: #type-mtl19" position="-10 -1 -6" scale=".70 .70 .70"
+      rotation="-125 -90 100"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj20; mtl: #type-mtl20" position="-8.354 7 -7.408" scale=".25 .25 .25"
+      rotation="-100 90 13"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj21; mtl: #type-mtl21" position="4 10.818 -17.54" scale="1.25 1.25 1.25"
+      rotation="-90 -120 -210"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj22; mtl: #type-mtl22" position="6 9 -10" scale="1.25 1.25 1.25"
+      rotation="-80 -119.66 -167.00"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj23; mtl: #type-mtl23" position="-3.8 -4.5 -8" scale="1 1 1"
+      rotation="-0.857 18 28"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj24; mtl: #type-mtl24" position="6.4 2.4 -7.98" scale=".50 .50 .50" rotation="45 0 0"></a-entity>
+ 
+
+    <a-entity obj-model="obj: #type-obj25; mtl: #type-mtl25" position="-4.20 -3 -15" scale=".50 .50 .50" rotation="0 180 25"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj26; mtl: #type-mtl26" position="-5.44 7.070 -11" scale=".30 .30 .30"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj27; mtl: #type-mtl27" position="9 9 -20" scale=".50 .50 .50"
+      rotation="0 -30 45"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj28; mtl: #type-mtl28" position="4.612 -2 -8.65" scale=".25 .25 .25" rotation="0 -50 45"></a-entity>
+
+
+    <a-entity obj-model="obj: #type-obj29; mtl: #type-mtl29" position="2 8 -10" scale=".20 .20 .20" rotation="0 -50 45"></a-entity>
+
+    <a-entity obj-model="obj: #type-obj30; mtl: #type-mtl30" position="-1.94 7 -15.27" scale=".30 .30 .30" rotation="0 -50 45"></a-entity>
+
+    
+    <a-entity obj-model="obj: #type-obj31; mtl: #type-mtl31" position="-4.52 -1.5 -5" scale=".30 .30 .30"></a-entity>
+
+<!-- Copyright -->
+    <a-text value="Copyright 2020 | Gaby Huerta-Golbad" color="white" scale=".50 .50 .50" position="-3.2 -3.1 -6"></a-text>
+
+<!-- Logo -->
+    <a-plane position="0.001 2 -5.777" scale="2 2 2" rotation="-2.822 0.904 0.175" src="assets/img/logo.jpg"></a-plane>
+    <a-text value="Type & Lettering" color="white" scale="1 1 1" position="-0.8 1.414 -5.475"></a-text>
+
+<!-- Background -->
+
+    <a-sky id="image-360" color="blue" radius="1.0"
+      animation="property: rotation; to: 180 0 0; loop: true; dur: 100000; dir: reverse" position="-0.037 4.567 -0.230"
+      rotation="6.376 86.246 82.514" scale="45 45 45" src="assets/img/web_background2.jpg"></a-sky>
+   
+<!-- Camera  -->
+    <a-entity camera=""
+        position="0 1.6 0"
+        look-controls cursor="rayOrigin: mouse">
+    <a-entity cursor
+        position="0 0 -1"
+        geometry="primitive: sphere; radius: 0.01;"
+        material="color: yellow; shader: flat;">
+    </a-entity>
+    </a-entity>
+
+  </a-scene>
+  
+  <script src="assets/js/main.js"></script>
+</body>
+
+
+</html>
